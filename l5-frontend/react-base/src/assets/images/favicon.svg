@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="86" height="48" viewBox="0 0 86 48">
+    <style>
+        path { fill: #fff; }
+        @media (prefers-color-scheme: light) {
+            path { fill: #000; }
+        }
+    </style>
+    <g fill="none" fill-rule="evenodd">
+        <g fill="#F8F8F9">
+            <g>
+                <path d="M26.564 10.182L78.148 10.182 85.97 0zM72.447 18.909L13.04 29.091 64.625 29.091M0 48L51.584 48 59.406 37.818z" transform="translate(-34 -36) translate(34 36)"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,92 @@
+.login-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 30vw 70vw);
+    align-items: center;
+    justify-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    width: 20vw;
+    min-height: 500px;
+    height: 50%;
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    padding: 0 1.4vw;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    min-height: inherit;
+}
+
+.left-section {
+    width: 100%;
+    height: 100%;
+    background: var(--primary-color);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.clip {
+    position: absolute;
+    top: 0;
+    left: 24vw;
+    width: 8vw;
+    height: 50%;
+    background: var(--background);
+}
+
+.left-section-content {
+    position: relative;
+    left: 8vw;
+    padding: 0.5vh 0.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    background: var(--background);
+}
+
+.left-section-heading,
+.left-section-subheading {
+    color: var(--primary-color);
+}
+
+.left-section-heading {
+    font-size: 4vw;
+    font-weight: 600;
+}
+
+.left-section-subheading {
+    font-size: 1.5vw;
+    padding: 0.5vh 0.4vw;
+}
+
+.form input {
+    width: 100%;
+    outline: none;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.form img {
+    min-height: 8vh;
+}
+
+.form button {
+    border-radius: 4px;
+    width: 100%;
+}
+
+.login-title {
+    font-size: 1.2vw;
+    font-weight: 600;
+}

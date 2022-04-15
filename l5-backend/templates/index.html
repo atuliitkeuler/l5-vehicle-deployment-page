@@ -1,0 +1,58 @@
+<!doctype html>
+
+<head>
+	<title>Test</title> 
+    	<meta charset=utf-8>
+</head>
+<body>
+        <h1> L5 Vehicle Deployment </h1>
+        <form action="/register" method="post">
+        	<label for="fname">Telemetry IMEI: </label>
+           	<input type="text" name="telemetry_imei" /><br>
+
+            	<label for="fname">Telemetry Vendor: </label>
+            	<select name="telemetry_vendor_id" id="telemetry_vendor_id" onfocus="this.selectedIndex = -1;">
+                	{% for telemetry_vendor_item in telemetry_vendors %}
+                	<option value="{{ telemetry_vendor_item.id }}">{{telemetry_vendor_item.name}}</option>
+                	{% endfor %}
+	    	</select><br>
+
+            	<label for="fname">Vehicle Registration Number: </label>
+            	<input type="text" name="vehicle_registration_number" /><br>
+
+            	<label for="fname">Vehicle Chassis Number: </label>
+            	<input type="text" name="vehicle_chassis_number" /><br>
+
+            	<label for="fname">Battery EBIN: </label>
+            	<input type="text" name="ebin"></input></input><br>
+
+            	<label for="fname">Charger Serial Number: </label>
+            	<input type="text" name="charger_serial_number"></input><br>
+
+            	<label for="fname">Hub Name: </label>
+            	<select name="hub_id" id="hub_id" onfocus="this.selectedIndex = -1;">
+                	{% for hub_item in hubs %}
+                	<option value="{{ hub_item.id }}">{{hub_item.name}}</option>
+                	{% endfor %}
+	    	</select><br>
+
+            	<label for="fname">Client Name: </label>
+            	<select name="client_id" id="client_id" onfocus="this.selectedIndex = -1;">
+                	{% for client_item in clients %}
+                	<option value="{{ client_item.id }}">{{client_item.name}}</option>
+                	{% endfor %}
+	    	</select><br>
+
+            	<label for="fname">Client Hub Name: </label>
+            	<select name="client_hub_id" id="client_hub_id" onfocus="this.selectedIndex = -1;">
+                	{% for client_hub_item in client_hubs %}
+                	<option value="{{ client_hub_item.id }}">{{client_hub_item.name}}</option>
+                	{% endfor %}
+	    	</select><br>
+
+			<label for="fname">Pass Code to submit data: </label>
+    		<input type="text" name="password" /><br>
+
+            	<input type="submit" value="Signup"></input>
+        </form>
+</body>

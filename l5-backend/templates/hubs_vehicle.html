@@ -1,0 +1,30 @@
+<!doctype html>
+
+<head>
+    <title>Hubs Mapping</title>
+    <meta charset=utf-8>
+</head>
+<body>
+<h1> Hubs Vehicle Mapping </h1>
+<form action="/hubs_map" method="post">
+    <label for="fname">Vehicle Number: </label>
+	<select name="vehicle_id" id="vehicle_id" onfocus="this.selectedIndex = -1;">
+        {% for vehicle in vehicles %}
+        <option value="{{ vehicle.id }}">{{vehicle.number}}</option>
+        {% endfor %}
+    </select><br>
+
+    <label for="fname">Hub Name: </label>
+    <select name="hub_id" id="hub_id" onfocus="this.selectedIndex = -1;">
+        {% for hub_item in hubs %}
+        <option value="{{ hub_item.id }}">{{hub_item.name}}</option>
+        {% endfor %}
+    </select><br>
+
+    <label for="fname">Pass Code to submit data: </label>
+    <input type="text" name="password" /><br>
+
+
+    <input type="submit" value="Submit"></input>
+</form>
+</body>

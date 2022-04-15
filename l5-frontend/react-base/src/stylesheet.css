@@ -1,0 +1,75 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: 1.115vw !important;
+    background: var(--background);
+    font-family: Archia, sans-serif !important;
+}
+
+:root {
+    --background: #fafafa;
+    --accent-color: #f16677;
+    --active: #0cd091;
+    --active-hover: #00c59b;
+    --primary-color: #09213d;
+    --white: #fff;
+    --light-grey: #889399;
+    --header-text-color: rgba(255, 255, 255, 0.6);
+    --border-color: #ecf0f3;
+    --sidebar-background: #fff;
+    --text-color: #323643;
+    --font-family: Archia;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    --spacing: 4px;
+    --border-radius: 8px;
+    --error-color: var(--accent-color);
+    --header-height: 85px;
+    --hollow-button-border-color: #8dedd8;
+    --hollow-button-background-color: rgba(182, 243, 230, 0.1);
+    --small-font: 0.975vw;
+    --xs-font: 0.8vw;
+    --blue: #4a90e2;
+}
+
+button {
+    padding: 16px 24px;
+    outline: none;
+    color: var(--white);
+    background: var(--active);
+    border: none;
+    cursor: pointer;
+    text-transform: full-size-kana;
+    letter-spacing: 1px;
+    font-size: inherit;
+    width: 100%;
+    border-radius: 4px;
+    font-family: var(--font-family);
+}
+
+button:hover {
+    background: var(--active-hover);
+    /*box-shadow: var(--box-shadow);*/
+}
+
+button:disabled,
+button:disabled:hover {
+    background: var(--light-grey);
+    box-shadow: unset;
+}
+
+button.outlined {
+    background-color: var(--white) !important;
+    border: 2px solid var(--active);
+    color: var(--active);
+}
+
+.MuiTextField-root {
+    width: 100%;
+}
+
+.error-text {
+    font-size: var(--xs-font);
+    color: var(--error-color);
+}

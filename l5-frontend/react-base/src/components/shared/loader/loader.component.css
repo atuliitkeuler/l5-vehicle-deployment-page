@@ -1,0 +1,31 @@
+.component-loader,
+.component-loader img {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.full-page-loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - var(--header-height));
+    width: 100vw;
+
+    position: absolute;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+
+    z-index: 100;
+
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(4px);
+}
+
+.full-page-loader img {
+    max-height: 16vh;
+    max-width: 16vh;
+}
